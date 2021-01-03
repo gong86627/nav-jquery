@@ -11,41 +11,27 @@
 
 <body>
     <header class="globalHeader">
-        <input type="text">
-        <button>搜索</button>
+        <form action="https://www.baidu.com/s" class="searchForm">
+            <input type="text" name='wd'>
+            <button type="submit">搜索</button>
+        </form>
     </header>
     <main class="globalMain">
         <ul class="siteList">
-            <li>
-                <div class="site">
-                    <div class="logo">A</div>
-                    <div class="link">acfun.cn</div>
+            <li class="last">
+                <div class="addButton">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="#icon-add"></use>
+                        </svg>
+                    </div>
+                    <div class="text">新增网站</div>
                 </div>
-            </li>
-            <li>
-                <div class="site">
-                    <div class="logo"></div>
-                    <div class="link">bilibili.com</div>
-                </div>
-            </li>
-            <li>
-                <div class="site">
-                    <div class="logo">A</div>
-                    <div class="link">acfun.cn</div>
-                </div>
-            </li>
-            <li class="addButton">
-                <div class="icon-wrapper">
-                    <svg class="icon">
-                        <use xlink:href="#icon-add"></use>
-                    </svg>
-                </div>
-                <div class="text">新增网站</div>
             </li>
         </ul>
     </main>
-    <script src="http://at.alicdn.com/t/font_2302334_7ph9ezmcb3l.js
-    "></script>
+    <script src="//at.alicdn.com/t/font_2302334_fhnovdw98gq.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
 </body>
 

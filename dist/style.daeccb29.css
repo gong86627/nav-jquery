@@ -26,6 +26,10 @@ input {
   fill: currentColor;
   overflow: hidden;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* style */
 body {
@@ -34,10 +38,28 @@ body {
 
 .globalHeader {
   margin: 20px;
+}
+
+@media (min-width:500px){
+  .globalHeader{
+    margin: 60px 0 100px;
+  }
+}
+
+.searchForm {
   display: flex;
   justify-content: space-between;
 }
-.globalHeader > input {
+
+@media (min-width:500px){
+  .searchForm {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.searchForm > input {
   width: 100%;
   margin-right: 10px;
   height: 40px;
@@ -46,7 +68,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-.globalHeader > button {
+.searchForm > button {
   white-space: nowrap;
   padding: 0 28px;
   border: none;
@@ -56,14 +78,32 @@ body {
   font-size: 16px;
 }
 
-.globalMain {
+.globalMain{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .siteList {
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media (min-width:500px){
+  .siteList {
+    margin-left: 0;
+    margin-right: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+
+  .siteList > li {
+    margin-right:25px;
+  }
+}
+
 .siteList > li {
   margin-bottom: 10px;
 }
@@ -77,7 +117,22 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 20px 0;
+  position:relative;
+  cursor: pointer;
 }
+.siteList .site > .close {
+  position: absolute;
+  right:0px;
+  top:0px;
+  padding:4px;
+  display: none;
+  cursor: default;
+}
+
+.siteList .site:hover > .close{
+  display: block;
+}
+
 .siteList .site > .logo {
   width: 64px;
   height: 64px;
@@ -121,4 +176,4 @@ body {
 }
 
 
-/*# sourceMappingURL=/style.e308ff8e.css.map */
+/*# sourceMappingURL=style.daeccb29.css.map */
