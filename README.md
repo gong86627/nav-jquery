@@ -3,7 +3,14 @@ jQuery版前航项目
 
 源码放在src目录
 
-可以下载parcel进行运行
-yarn add global parcel
-
+#开发
+```
+yarn global add parcel
 parcel src/index.html
+
+```
+
+#build
+```
+yarn build
+```
